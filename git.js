@@ -1,3 +1,7 @@
+//  -------------------------GIT config------------
+// The git config command is used to configure settings and preferences for Git on your system. It allows you to set up various configurations like your username, email address, editor, and more. These configurations can be applied at different levels: system, global, or local (repository-specific).
+
+
 //  -------------------------GIT------------
 // git -> Git is a distributed version control system widely used for tracking changes in source code during software development.
 // 1. local version controll
@@ -46,19 +50,79 @@
 // git branch -m mastar master
 
 
-// cvcs
-// git config
+// --------------------------------git add-------------------
+// The git add command is used to stage changes in your working directory for the next commit. Staging allows you to prepare selected changes (e.g., added or modified files) before actually committing them to the repository. This way, you can review and organize what gets included in each commit.
+
+// How git add Works
+// Staging Changes:
+
+// When you modify files in your working directory, those changes are untracked by Git until you stage them.
+// git add moves the changes from the working directory to the staging area, making them ready for the next commit.
+// Selective Staging:
+
+// You can stage all changes at once or choose specific files or parts of files to stage.
+
+
+// --------------------------------git log-------------------
+// The git log command is used to display the commit history of a Git repository. It provides detailed information about each commit, including the commit hash, author, date, and commit message. This command is essential for reviewing the changes made to a project over time
+
+// git log --oneline
+// Shows each commit in a single line, including the abbreviated commit hash and commit message.
+
+// git log -n 5
+// Displays only the last 5 commits (replace 5 with any number).
+
+// git log -p
+// Shows the differences (diffs) introduced in each commit, allowing you to see exactly what was changed.
+
+// git log -- filename
+// Shows the commit history for a specific file, useful for tracking changes to a particular file.
+
+// git log --graph --oneline --all --decorate
+// Displays a graphical representation of the commit history, including branches and merges. The options:
+
+
+// git log --author="Author Name"
+// Shows only the commits made by a specific author.
+
+// git log --grep="keyword"
+// Displays commits with messages containing the specified keyword.
+
+// git log --since="2 weeks ago"
+// git log --after="2023-01-01" --before="2023-02-01"
+// Filters commits based on a time period.
+
+
+//  -------------------------GIT commit -m "" ------------
+// The git commit command is used to save changes to the local repository. When you commit, you're creating a snapshot of the current state of your project, recording changes that have been staged with git add. Each commit is a checkpoint in your project's history, allowing you to track and revert changes if necessary.
+
+// Commits all staged changes with a descriptive message.
+// The -m flag allows you to include the commit message directly in the command.
+
+// git commit -a -m "Your commit message"
+// The -a flag automatically stages all modified and deleted files (except untracked files) before committing.
+// This combines the staging and committing steps into one command.
+
+
+
+//  -------------------------GIT commit -m "" ------------
+
+
+
+
+
+// git config // done
 // git config --global --list
 // git config --global user.name ""
 // git config --global user.emai ""
-// git status
-// git init 
-// git init -b main or any
-// rm -rf .git 
-// git add name
-// git log 
-// git commit -m ""
-// git commit -a -m ""
+// git status // done
+// git init //done
+// git init -b main or any // done
+// rm -rf .git  //done
+// git add name // done
+// git log  // done
+// git commit -m "" //done
+// git commit -a -m "" // done
 // git diff 
 // git diff -staged
 // git rm --cached filename 
